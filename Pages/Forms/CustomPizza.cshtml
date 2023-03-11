@@ -1,0 +1,38 @@
+﻿@page
+@model RazorPizzaria.Pages.Forms.CustomPizzaModel
+@{
+}
+<div class="text-center container">
+    <h1>Create Your Own Pizza !</h1><br /><hr />
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 bg-light col-4">
+        <label class="mb-1">Pizza Name</label><br />
+        <input type="text" id="name" class="mb-2" style="border-color: #2a6dc9;border-radius:5px;" asp-for="Pizzas.PizzaName"  placeholder="Give Your Pizza a Name ..."/>
+        <br />
+        <hr />
+        <label>Tomato sause</label>
+        <input type="checkbox" id="tomato" class="mb-2" asp-for="Pizzas.TomatoSause" placeholder="TomatoSause" />
+        <br />
+        <label>Pine apple</label>
+        <input type="checkbox" id="apple" class="mb-2" asp-for="Pizzas.Pineapple" placeholder="Pineapple"/>
+        <br />
+        <label>Peperoni</label>
+        <input type="checkbox" id="peperoni" class="mb-2" asp-for="Pizzas.Peperoni" placeholder="Peperoni"/>
+        <br />
+        <label>Mushroom</label>
+        <input type="checkbox" id="mushroom" class="mb-2"asp-for="Pizzas.Mushroom" placeholder="Mushroom"/>
+        <br />
+        <label>Ham</label>
+        <input type="checkbox" id="ham" class="mb-2" asp-for="Pizzas.Ham" placeholder="Ham"/>
+        <br />
+        <label>Cheese</label>
+        <input type="checkbox" id="cheese" class="mb-2" asp-for="Pizzas.Cheese" placeholder="Cheese"/>
+        <br /><hr />
+        <label class="mb-1" >Base Price</label><br />
+        <input type="number" style="border-color: #2a6dc9;border-radius:5px;"  id="base"class="mb-2" asp-for="Pizzas.BasePrice" placeholder="BasePrice"/>
+        <br /><hr />
+        
+        <button class="btn btn-primary mt-1" type="submit">Order my Pizza</button>
+
+    </form>
+
+</div>
